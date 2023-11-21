@@ -18,7 +18,7 @@ app.use(
     origin: "http://localhost:5173",
   })
 );
-
+app.use("/", express.static(__dirname + "/public"));
 // app.use(express.join());
 // app.use('/main', (req, res) => {
 //   res.send('main page');

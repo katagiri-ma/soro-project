@@ -31,7 +31,7 @@ npm i
 1. データベースの作成
 
 ```psql
-echo "CREATE DATABASE task_mane;" | psql
+echo "CREATE DATABASE taskMane;" | psql
 ```
 
 1. '.env'ファイルの作成
@@ -40,7 +40,7 @@ echo "CREATE DATABASE task_mane;" | psql
 
 - DB_USER=user
 - DB_PASSWORD=null
-- DB_NAME=task_mane
+- DB_NAME=taskmane
 - NODE_ENV=development
 
 1. テープルの作成
@@ -91,6 +91,7 @@ npm run dev
 ## リソース
 
 ![Alt text](image-1.png)
+
 ※提供：おがちゃん 🥷
 
 ## 将来計画
