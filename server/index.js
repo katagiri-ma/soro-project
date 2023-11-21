@@ -12,13 +12,15 @@ const taskController = require("./src/controllers/task.controller");
 require("dotenv").config();
 
 const PORT = process.env.PORT || 3000;
-
+// サーバーが立ち上がった状態でフロントを立ち上げる
 app.use(
   cors({
     origin: "http://localhost:5173",
   })
 );
-app.use("/", express.static(__dirname + "/public"));
+// app.use("/", express.static(__dirname + "../client/dist"));
+// app.use("/", express.static("../client/dist"));
+app.use("/", express.static("../client/dist"));
 // app.use(express.join());
 // app.use('/main', (req, res) => {
 //   res.send('main page');

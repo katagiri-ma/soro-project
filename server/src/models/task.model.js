@@ -1,4 +1,6 @@
-const knex = require("../knex");
+// const knex = require("../knex");
+// const knex = require("../../index");
+const knex = require("../../db/index");
 
 const { validProps, requiredProps } = require("../util/validation");
 const validateProps = validProps(["id", "description"]);
