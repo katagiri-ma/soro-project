@@ -20,7 +20,7 @@ app.use(
 );
 // app.use("/", express.static(__dirname + "../client/dist"));
 // app.use("/", express.static("../client/dist"));
-app.use("/", express.static("../client/dist"));
+app.use("/", express.static("./dist"));
 // app.use(express.join());
 // app.use('/main', (req, res) => {
 //   res.send('main page');
