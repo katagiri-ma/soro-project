@@ -76,18 +76,18 @@ module.exports = {
       database: process.env.POSTGRES_DB || "taskmane",
     },
     migrations: {
-      directory: "./migrations",
+      directory: "./db/migrations",
     },
-    seeds: { directory: "./seeds" },
+    seeds: { directory: "./db/seeds" },
     // ...
   },
   production: {
     client: "pg",
     connection: process.env.DATABASE_URL,
     migrations: {
-      directory: "./migrations",
+      directory: "./db/migrations",
     },
-    seeds: { directory: "./seeds" },
+    seeds: { directory: "./db/seeds" },
     // ...
   },
 };
