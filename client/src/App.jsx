@@ -10,17 +10,13 @@ function App() {
   const [task, setTask] = useState();
   const [list, setList] = useState();
 
-  // 機能をしっかり分けよう
+  // 機能を分ける
   // パターン１：getDataは初回マウント時に発火→listタグに反映
   // パターン２：ボタンの押下でset→listタグ量産の流れ
   useEffect(() => {
     getData();
     console.log(task);
-
-    // makeList関数をuseEffectの外で作るといいかも！ボタン押下時にも使えそう
-    // const makeList = task.map(t => '${t}')
   }, []);
-  // });
 
   const getData = async () => {
     const taskTable = await api.getData();

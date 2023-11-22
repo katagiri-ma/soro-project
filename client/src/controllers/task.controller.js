@@ -7,10 +7,7 @@ const getData = () => {
 
 const postData = (data) => {
   console.log("POSTリクエスト");
-  // 変数を作って引数から代入できるようにする？
-  // let obj = data
-  // return axiosClient.post("/task", { id: "", description: "" });
-  console.log("data", data);
+  // console.log("data", data);
   return axiosClient.post("/task", data);
 };
 

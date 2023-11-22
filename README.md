@@ -90,9 +90,13 @@ npm run dev
 
 ## リソース
 
-![Alt text](image-1.png)
+![Alt text](image-2.png)
 
 ※提供：おがちゃん 🥷
+
+## リンク
+
+[タスク管理アプリ](https://task-0z5d.onrender.com/)
 
 ## 将来計画
 

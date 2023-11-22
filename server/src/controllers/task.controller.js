@@ -14,11 +14,5 @@ const save = async (req, res) => {
   console.log("req.body", req.body);
   res.send(addDate);
 };
-// const newlist = async (req, res) => {
-//   res.send({
-//     customer: {},
-//     buttonText: "Add Customer",
-//   });
-// };
 
 module.exports = { index, save };

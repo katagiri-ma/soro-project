@@ -22,19 +22,14 @@ module.exports = {
       .limit(limit);
   },
 
-  // 新規注文の作成
+  // 新規タスクの作成
   create(newTask) {
-    // お試しバリデーション
+    // バリデーション
     validateRequired(validateProps(newTask));
-    // return knex.insert(customer, customer.id).from(CUSTOMER_TABLE);
-    // { id: 1, description: "買い物" },
-    console.log("newTask", newTask);
-    // return knex.insert(id, description).from(TASK_TABLE);
+
+    // console.log("newTask", newTask);
     return knex.insert(newTask).from(TASK_TABLE);
   },
 
   // タスクの更新
 };
-
-// 新規注文の作成
-// insertinto

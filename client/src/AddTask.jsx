@@ -1,10 +1,6 @@
 import { useState, useRef } from "react";
-// import axios from "axios";
-// import axiosClient from "../axios";
 
 function AddTask({ getData, setTask, task, api }) {
-  //   const [text, setText] = useState([]);
-  //   const [singleTask, setSingleTask] = useState();
   console.log("api", api);
   const inputRef = useRef(null);
   const textUp = () => {
